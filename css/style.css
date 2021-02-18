@@ -1,13 +1,24 @@
-body {
-    background-color: #162447;
-  }
-  
-  #clock {
-    color: #e71414;
-    font-size: 5rem;
-    font-weight: 900;
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-  
+*{  margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #10101e
+
+}
+
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    align-items: center;
+    color: #fff;
+
+
+}

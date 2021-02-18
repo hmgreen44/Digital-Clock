@@ -1,4 +1,4 @@
-function clock();
+function clock(){
     let currentTime = new Date();
     var hour = date.getHours();
     var min = date.getMinutes();
@@ -18,7 +18,7 @@ function clock();
         mins = mins < 10 ? "0" + mins : mins;
         secs = secs < 10 ? "0" + secs : secs;
 
-        
+
         
         document.getElementById("clock").innerText = timeString;
         let Timer = setTimeout(displayCurrentTime, 1000);
@@ -28,5 +28,5 @@ function clock();
           }
 
       clock();
-      
+    }  
 }
