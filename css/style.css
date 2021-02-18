@@ -1,4 +1,5 @@
-*{  margin: 0;
+*{
+    margin: 0;
     padding: 0;
 
 }
@@ -8,17 +9,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #10101e
+    background: #10101e;
 
 }
 
-.time{
+.clock{
     font-size: 60px;
     display: flex;
     justify-content: center;
     letter-spacing: 3px;
     align-items: center;
     color: #fff;
+    border-style: solid;
+    padding: 50px;
+
 
 
 }
+

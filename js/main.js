@@ -1,32 +1,27 @@
-function clock(){
-    let currentTime = new Date();
-    var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
+function updateClock(){
+    var dateTime = new Date();
+    var hours = dateTime.getHours();
+    var minutes = dateTime.getMinutes();
+    var seconds = dateTime.getSeconds();
+    var am_or_pm = document.getElementById("am_or_pm");
 
-    function addZero(component) {
-        return component < 10 ? "0" + component : component;
-      }
     
-    let period = "AM";{
-        if (hrs == 0) hrs = 12;
-        if (hrs > 12) hrs = hrs - 12;	    
-        
-        period = "PM";
+    if(hours >=12){
+        am_or_pm.innerHTML = 'PM';
+    }else{
+        am_or_pm.innerHTML + 'AM';
+    }
 
-        hrs = hrs < 10 ? "0" + hrs : hrs;
-        mins = mins < 10 ? "0" + mins : mins;
-        secs = secs < 10 ? "0" + secs : secs;
+    if(hours > 12){
+     hours = hours - 12;
+    }
 
+{
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+    
+}  
+setInterval( updateClock, 1000)
 
-        
-        document.getElementById("clock").innerText = timeString;
-        let Timer = setTimeout(displayCurrentTime, 1000);
-
-        function addZero(component) {
-            return component < 10 ? "0" + component : component;
-          }
-
-      clock();
-    }  
 }
