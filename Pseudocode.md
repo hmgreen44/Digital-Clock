@@ -9,7 +9,7 @@ Get date
 Get Hour
 Get min
 Get sec
-
+Get AM/PM
 if hour is less than 12 return am
 
 if hour is greater than 12 return pm -12
